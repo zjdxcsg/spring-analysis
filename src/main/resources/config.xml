@@ -14,12 +14,14 @@
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
         http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">
 
-    <bean id="simpleMethodInterceptor" class="aop.SimpleMethodInterceptor" />
+    <!--<bean id="simpleMethodInterceptor" class="aop.SimpleMethodInterceptor" />
 
     <bean class="aop.SimpleAopBean" />
 
     <aop:config expose-proxy="true">
         <aop:advisor advice-ref="simpleMethodInterceptor" pointcut="execution(* aop.SimpleAopBean.*(..))" />
-    </aop:config>
+    </aop:config>-->
+
+    <bean class="base.SimpleBean" />
 
 </beans>
